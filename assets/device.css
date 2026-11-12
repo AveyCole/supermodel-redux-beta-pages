@@ -1,0 +1,47 @@
+.mc{width:100%;height:auto;overflow:visible}
+.mc text{font-family:var(--f)}
+.mc-edge{fill:#b4b3ae}
+.mc-body{fill:var(--mc-casing)}
+.mc-plate{fill:none;stroke:#b2b1ac;stroke-width:1.4}
+.mc-well{fill:var(--mc-well);stroke:#acaba6;stroke-width:1.2}
+.mc-tape rect{fill:#202022}
+.mc-tape .tape-t{fill:#efeee8;font-size:17px;font-weight:700;letter-spacing:.34em}
+.key-cap{fill:var(--mc-key)}
+.key .kt{fill:var(--mc-key-ink);font-size:12px;font-weight:700;letter-spacing:.04em}
+.key .kt.num{font-size:13px}
+.key.pad .pt{fill:var(--mc-key-ink);font-size:17px;font-weight:700}
+.key .ul{fill:var(--mc-key-ink)}
+.ico{fill:none;stroke:var(--mc-key-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.key.on .key-cap,.key.lit .key-cap{fill:var(--red)}
+.key.on .kt,.key.lit .kt,.key.on .pt,.key.lit .pt{fill:#2b1710}
+.key.on .ul,.key.lit .ul{fill:#2b1710}
+.key.lit .ico{stroke:#2b1710}
+.kn-ring{fill:#3c3d41}
+.kn-cap{fill:#56575b}
+.knob.big .kn-ring{fill:#495b5f}
+.knob.big .kn-cap{fill:#62757a}
+.kn-led{fill:#bebdb8;stroke:#a6a5a0;stroke-width:1}
+.knob.lit .kn-ring{stroke:var(--red);stroke-width:5}
+.knob.lit .kn-led{fill:var(--red);stroke:var(--red)}
+.lcd-bezel{fill:#303134}
+.lcd.lit .lcd-bezel{stroke:var(--red);stroke-width:5}
+.lcd-glass{fill:var(--lcd)}
+.lcd-t{fill:var(--lcd-ink);font-family:var(--f-lcd) !important;font-size:11px}
+.lcd-t.inv{fill:var(--lcd)}
+.lcd-sel{fill:var(--lcd-ink)}
+.lcd-logo{fill:var(--lcd-ink);font-family:var(--f-lcd) !important;font-size:23px;letter-spacing:.02em}
+/* while controls are lit, the rest of the panel steps back and stops blinking */
+.mc .key,.mc .knob,.mc .lb,.mc .lb2,.mc .lb3,.mc .name,.mc .pg-led,.mc .pwr,.mc-tape{transition:opacity .15s}
+.mc.focus .key:not(.lit),.mc.focus .knob:not(.lit){opacity:.28}
+.mc.focus .lb,.mc.focus .lb2,.mc.focus .lb3,.mc.focus .name,.mc.focus .pg-led,.mc.focus .pwr,.mc.focus .mc-tape{opacity:.3}
+.mc.focus .key.on:not(.lit) .key-cap{fill:var(--mc-key)}
+.mc.focus .key.on:not(.lit) .kt,.mc.focus .key.on:not(.lit) .pt{fill:var(--mc-key-ink)}
+.mc.focus .key.on:not(.lit) .ul{fill:var(--mc-key-ink)}
+.lb{fill:#3a3a38;font-size:10.5px;font-weight:700;letter-spacing:.03em}
+.lb2{fill:#74736f;font-size:8.5px;font-weight:600;letter-spacing:.03em;text-decoration:underline}
+.lb3{fill:#74736f;font-size:7px;font-weight:600}
+.name{fill:#2a2a28;font-size:14.5px;font-weight:700;letter-spacing:-.01em}
+.pg-led{fill:#bebdb8}
+.pg-led.on{fill:var(--red)}
+.pwr{fill:none;stroke:#5b5a56;stroke-width:1.5;stroke-linecap:round}
+

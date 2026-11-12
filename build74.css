@@ -1,0 +1,6 @@
+.build-progress{border-top:1px solid var(--line);margin-top:22px;padding-top:20px}.build-progress p{font-size:13px;line-height:1.6}.build-progress .ready-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:18px 0}.build-progress button:disabled{opacity:.4;cursor:not-allowed}.build-progress a[hidden]{display:none}.build-progress details{font-size:12px;color:var(--muted)}.build-progress pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:180px;overflow:auto;background:#252824;color:#edf0e5;padding:12px;border-radius:8px;font-size:10px}.build-progress code{display:block;font-size:9px;overflow-wrap:anywhere;margin:10px 0}#device-status{font-size:11px;color:var(--muted)}.secondary{padding:12px 18px;border:1px solid var(--line);border-radius:9px;color:var(--ink);background:transparent;text-decoration:none}.primary:disabled{opacity:.4;cursor:not-allowed}
+#samples909 { margin: 1rem 0; border: 1px solid currentColor; padding: .75rem; min-width: 0; }
+#samples909 p { margin: 0 0 .75rem; }
+.sample-drop909 { border: 1px dashed currentColor; padding: .65rem; margin-top: .5rem; }
+.sample-drop909 label, .sample-drop909 small { display: block; overflow-wrap: anywhere; }
+.sample-drop909 input { display: block; margin: .3rem 0; max-width: 100%; }

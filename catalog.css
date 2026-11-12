@@ -1,0 +1,23 @@
+.intro{padding-top:32px;padding-bottom:22px}
+.intro h1{font-size:clamp(36px,3.8vw,54px);margin-top:14px;margin-bottom:14px}
+.build-status{display:inline-block;margin-top:16px;border:1px solid #ccd4c1;border-radius:20px;padding:8px 13px;font-size:10px;text-decoration:none;color:var(--green);background:#e9eddf}
+.build-status span{padding:0 5px;color:var(--muted)}
+.workflow{padding-bottom:24px}
+.workbench{align-items:start}
+.instrument{position:sticky;top:30px;align-self:start;margin-top:80px}
+.firmware-hash{margin-top:12px!important;font-size:9px!important;overflow-wrap:anywhere}
+.firmware-hash code{display:block}
+.option small{flex-shrink:0}
+.order-handle{background:none;border:0;padding:1px 0 1px 3px;color:#8c987f;font-size:17px;line-height:1;cursor:grab;touch-action:none}
+.option.dragging{opacity:.4}
+.option[data-drop-position="before"]{box-shadow:0 -2px 0 var(--green)}
+.option[data-drop-position="after"]{box-shadow:0 2px 0 var(--green)}
+#options-machines .option{gap:6px}
+#options-machines .option small{font-size:8px}
+@media(max-width:900px){.instrument{position:static;margin-top:15px}.intro{padding-top:28px}.build-status{font-size:9px}.build-id strong{line-height:1.5}}
+
+.option-name {flex: 1; min-width: 0;} .option small {flex: 0 1 48%; min-width: 0; white-space: normal; overflow-wrap: anywhere;}
+
+.machine-row-icon{width:18px;height:18px;vertical-align:middle;margin-right:6px;object-fit:contain}
+
+.machine-cost{display:block;font-size:9px;letter-spacing:.08em;color:var(--green);white-space:nowrap}
