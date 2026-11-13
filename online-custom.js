@@ -48,8 +48,8 @@ buildButton.addEventListener('click', async () => {
   try {
     const job = await api('/api/build', payload);
     if (!/^[a-f0-9]{32}$/.test(job.id)) throw new Error('Invalid build ID.');
-    status.textContent = 'Compiling and verifying your firmware…';
-    const expires = Date.now() + 21 * 60 * 1000;
+    status.textContent = 'Queued for GitHub Actions. This can take several minutes…';
+    const expires = Date.now() + 45 * 60 * 1000;
     while (Date.now() < expires) {
       const current = await api('/api/jobs/' + job.id);
       if (current.state === 'failed') throw new Error(current.error || 'Firmware build failed.');
