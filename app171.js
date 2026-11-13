@@ -63,6 +63,7 @@ for(const category of categories){
     rating.setAttribute('role','img');
     rating.setAttribute('aria-label',`Relative voice cost ${cost.stars} out of 5`);
     rating.title=`${cost.instructions.toLocaleString()} peak instructions above idle, one default voice in the emulator`;
+    if(id==='sample-wizard') rating.title+=' (Classic stereo playback)';
     rating.textContent='★'.repeat(cost.stars)+'☆'.repeat(5-cost.stars);
     small.append(rating);
    }
